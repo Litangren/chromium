@@ -36,6 +36,24 @@
 [issue #78](https://github.com/jjqqkk/chromium/issues/78) Thanks [leoxxnet](https://github.com/leoxxnet)
 
 
+## 如何解决缺少Google API 密钥
+
+网上已有解决办法，实测可用：
+
+管理员模式打开CMD输入以下三行内容
+
+setx GOOGLE_API_KEY "AIzaSyAUoSnO_8k-3D4-fOp-CFopA_NQAkoVCLw"
+
+setx GOOGLE_DEFAULT_CLIENT_ID "6307505647-6knmr84r2pj2leudg3pp1j0h1licd6b9.apps.googleusercontent.com"
+
+setx GOOGLE_DEFAULT_CLIENT_SECRET "rbeWhXTLgU8oLiUeefPsEL9c"
+
+这三行分别是：API密钥、客户端ID、客户端密钥
+
+完成之后就可以登录谷歌账号了
+
+登录谷歌账号后浏览英文网页会自动弹出google翻译
+
 # Chromium with SSL VPN
 
 Chromium with SSL VPN lets you unblock websites directly in the browser.
